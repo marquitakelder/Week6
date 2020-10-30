@@ -1,103 +1,65 @@
+// Step 1
+var var1;
+
 // Step 2
-{
-    let name = "Marquita";
-    console.log(name); 
-}
+var1 = "string";
 
 // Step 3
-{
-    let name = "Jones";
-    console.log(name);
-}
+var2 = var1[5];
 
 // Step 4
-const name = "Marquita";
-console.log(name);
+var2 += "o!";
 
-// Steps 5 and 6
-if(1 + 1 === 2){
-    var number = 4;
-    console.log(number);
-}
+// Step 5
+var3 = 1;
 
-// Steps 7 and 8
-if(2 - 2 === 0){
-    let number = 0;
-    console.log(number);
-}
+// Step 6
+var4 = "2";
+
+// Step 7
+console.log(var3 + var4);
+
+// Step 8
+console.log(parseInt(var4) + var3);;
 
 // Step 9
-// const name = "Jones";
+var arr = [];
+console.log(arr);
 
 // Step 10
-const array = [];
+for(var i = 1; i < 11; i++) {
+    arr.push(i);
+}
+console.log(arr);
 
 // Step 11
-array.push(1, 2, 3);
-console.log(array);
+arr.push(11);
+console.log(arr);
 
 // Step 12
-const more = {
-    
-}
+arr.pop();
+console.log(arr);
 
 // Step 13
-const me = {
-    name: "Marquita",
-    age: "34",
-};
-console.log(me);
+arr.unshift(0);
+console.log(arr);
 
 // Step 14
-// console.log(`Hello I am ${Me.name}.`);
+arr.shift(0);
+console.log(arr);
 
 // Step 15
-let person = {
-    name: "Jones",
-    age: "3",
-    salutation: function () {
-        console.log(`Hello I am ${person.name} and I am ${person.age}.`);
-    }
-};
-
-person.salutation();
+arr.splice(0,1);
+console.log(arr);
 
 // Step 16
-let {name1, age1} = {name1: "Jones", age1: "3"};
-console.log(name1, age1);
+arr.splice(7,2);
+console.log(arr);
 
 // Step 17
-hello = () => {
-    var1 = console.log("Hello World!");
-}
-hello(); 
+arr.splice(0,0,-1,0,1);
+console.log(arr);
 
 // Step 18
-hello = (str) => {
-    var arrow2 = console.log(str);
-}
-hello("Hi!");
-
-// Step 19
-let arrow3 = (num1, num2) => {
-    return "You are not allowed to use the return keyword.";
-}
-console.log(arrow3());
-
-// Step 20
-setTimeout (hello = () => {
-    console.log("Hello again!");
-}, 2000) 
-
-// Step 21
-for(var i=0; i < array.length; i++) {
-    console.log(array[i]);
-}
-for(const num of array) {
-    console.log(num);
-}
-
-// Step 22
-for(const key in me) {
-    console.log(`${key}: ${me[key]}`);
-}
+var copy= arr.slice(0,3)
+console.log(copy);

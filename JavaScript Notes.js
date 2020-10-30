@@ -54,3 +54,23 @@ console.log(str4);
 
 // for Numbers and Strings, += appends elements
 
+// = is an Assignment operator
+
+// === is a Strict Comparison operator
+
+// == is an Equal To operator
+
+// Loops
+    // while    
+    let done = false;
+    let counter = 0;
+
+    while (!done) {
+        counter++;
+        if(counter === 10) {
+            done = true;
+        }
+        console.log(counter);
+    }
+
+    for(var i = 0; i < 10; i++);
